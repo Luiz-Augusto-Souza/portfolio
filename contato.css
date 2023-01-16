@@ -1,0 +1,5 @@
+
+
+.contato::after{
+    background-color: var(--cor-destaque3);
+  }
