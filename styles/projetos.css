@@ -1,0 +1,56 @@
+.content .projetos {
+ 
+  background-color: var(--cor-fundo);
+ justify-content: start;
+}
+.projetos::after{
+   background-color: var(--cor-destaque2);
+  }
+  .projetos .menu_projetos{
+    border-right:  1px solid var(--cor-cinza-claro);
+    height: 90%;
+    width: 20%;
+  }
+  .projetos .menu_projetos ul{
+    height: 100%;
+    font-size: 1.2em;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .menu_projetos  ul li label{
+    line-height: 2em;
+    display: block;
+    cursor: pointer;
+    color: var(--cor-cinza-claro);
+    padding-bottom: 2px;
+    position: relative;
+  }
+  .menu_projetos  ul li label:hover{
+    border-bottom: 2px solid var(--cor-cinza);
+    color: var(--cor-cinza);
+    padding-bottom: 0;
+
+  }
+  .menu_projetos input[type="radio"]:checked ~ label{
+    color: var(--cor-preto);
+  }
+  .menu_projetos input[type="radio"]~ label::after {
+    content:"";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: rgba(255, 255, 255, 0);
+    right:-0.5em;
+    background-color: transparent;
+    transform: scale(0);
+    transition: transform 0.5s;
+    
+  }
+  .menu_projetos input[type="radio"]:checked ~ label::after {
+      background-color: var(--cor-destaque2);
+      transform: scale(1);
+  }

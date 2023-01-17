@@ -5,10 +5,10 @@
 
 :root{
   /*    colors        */
-  --cor-destaque:#FFFF66;
-  --cor-destaque1:#6666ff;
-  --cor-destaque2:#66FF66;
-  --cor-destaque3:#FF6666;
+  --cor-destaque:hsla(60, 100%, 70%, 0.6);
+  --cor-destaque1:hsla(240, 100%, 70%, 0.6);
+  --cor-destaque2:hsla(120, 100%, 70%, 0.6);
+  --cor-destaque3:hsla(0, 100%, 70%, 0.6);
   --cor-preto:#343446;
   --cor-cinza:#8686A3;
   --cor-cinza-claro:hsl(256, 54%, 79%);
