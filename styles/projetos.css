@@ -1,5 +1,4 @@
 .content .projetos {
- 
   background-color: var(--cor-fundo);
  justify-content: start;
 }
@@ -53,4 +52,51 @@
   .menu_projetos input[type="radio"]:checked ~ label::after {
       background-color: var(--cor-destaque2);
       transform: scale(1);
+  }
+
+  .menu_projetos .proj{
+    text-align: justify;
+    position: absolute;
+    left:25%;
+    top:5%;
+    width: 70%;
+    height: 90%;
+    transform: translateY(110%);
+    animation: fadeOut 0.5s ease  forwards;
+  }
+
+  .menu_projetos input[type='radio']:checked ~ .proj{
+    animation: fadeIn 0.5s ease  forwards;
+  }
+
+
+
+
+/* animações */
+  @keyframes fadeOut {
+    100%{
+      transform: translate(100%,110%) scale(0);
+      opacity: 0;
+      
+    }
+    0%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    
+  }
+  @keyframes fadeIn {
+    0%{
+      transform: translateY(110%);
+      opacity: 0;
+    }
+    1%{
+      transform: translateY(-110%);
+      opacity: 0;
+    }
+    100%{
+      transform: translate(0%,0%); 
+      opacity: 1;
+    }
+    
   }
